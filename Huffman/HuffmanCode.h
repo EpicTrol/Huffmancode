@@ -12,7 +12,7 @@ using namespace std;
 struct Code {
 	char ch;	//×Ö·û
 	double key;	//È¨Öµ
-	Code(char l = '#',double k = 0 ) { ch = l; key = k; }
+	Code(char c = '#',double k = 0 ) { ch = c; key = k; }
 	Code &operator=(const Code &right) { key = right.key; ch = right.ch; return *this; }
 	friend bool operator>(const Code &r1, const Code &r2) { 
 		if(r1.key!=r2.key)return r1.key > r2.key;
